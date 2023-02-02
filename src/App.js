@@ -1,4 +1,5 @@
 import React from 'react';
+import NewExpense from "./components/NewExpense/NewExpense";
 import Expense from "./components/Expense";
 //import Card from "./components/Card";
 
@@ -14,18 +15,18 @@ function App() {
       amount: 50000,
       date: new Date(2022, 11, 11)
     }
-    ,{
+    , {
       title: 'pen',
       amount: 5,
       date: new Date(2022, 7, 14)
     }
   ]
-  
+
   return (
     <div>
-    <h2>Let's get started!</h2>
-  <Expense expenses={expenses}/>  
-  </div>
+      <NewExpense/>
+      <Expense expenses={expenses} />
+    </div>
   );
 }
 
